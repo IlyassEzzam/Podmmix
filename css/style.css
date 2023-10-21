@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
+::selection{
+    background: var(--blue);
+    color: #ffffff;
+    background: var(--yellows);
+}
+
+
+:root{
+    --yellowgren: #9b8e2b;
+    --yellows:#f7e226;
+    --black:#192a56;
+    --bb:#666;
+    --box-shadow:0.5rem 1.5rem #f5e98d;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+/*=================media=====queries==============*/
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:  1rem;
+    }
+}
+@media (max-width:768px) {
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0 , 100% 0, 0 0);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;font-size: 2rem;
+        background: #eee;
+    }
+}
+
+/* ****************************Start Header************************ */
+
+header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7% ;
+    align-items: center;
+    justify-content: space-between;
+    background: #ebd841;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: #35456d;
+    padding-right: 10px;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--yellowgren);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+    header .icons a{
+        display: none;
+    }
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+}
+
+/* ****************************End Header************************ */
+
+/* **************************start section*************************** */
+section{
+    padding: 9rem 9.5%;
+}
+section:nth-child(even){
+    background: #f0ecec;
+}
+
+section .home{
+    display: flex;
+    justify-content: center;
+}
+
+.home .content{
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media (max-width: 767px) {
+    .home .content{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+.home .content .p1{
+    color: var(--black);
+    text-align: center;
+    padding: 3px;
+    font-weight: 900;
+    font-size: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .home .content .p1{
+        font-weight: 800;
+        font-size: 16px;
+    }
+}
+
+.home .content .p2{
+    color: var(--black);
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+    align-items: center;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .home .content .p2{
+        font-size: 10px;
+        line-height: normal;
+        align-items: self-start;
+        text-align: center;
+    }
+}
+
+.home .icon{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.home .icon a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid ;
+}
+
+@media (max-width: 767px) {
+    .home .icon a{
+        font-size: 0.9rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+.home .bi-youtube:hover{
+        background-color: rgb(245, 18, 18);
+        color: #eee;
+        border-radius: 20px;
+}
+.home .bi-broadcast-pin:hover{
+    background-color: rgb(214, 218, 29);
+    color: #eee;
+    border-radius: 20px;
+}
+.home .bi-spotify:hover{
+    background-color: rgb(13, 158, 13);
+    color: #eee;
+    border-radius: 20px;
+}
+
+.home .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.home img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+/* **************************start section*************************** */
+
+/* **************************start About*************************** */
+
+
+
+.about h1.heading{
+    position: relative;
+    color: var(--black);
+    top: -35px;
+    font-size: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.about .heading a{
+    color: rgb(247, 247, 46);
+    position: relative;
+    left: 10px;
+    animation: width-icon 1s infinite alternate;
+}
+@keyframes  width-icon {
+    from{
+        color: rgb(247, 247, 46);
+    }
+    to{
+        color: rgb(24, 24, 24);
+        left: 30px;
+    }
+}
+
+.about h1.heading::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 2px;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.about h1.heading::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -29px;
+    width: 12px;
+    height: 12px;
+    background-color: #841899;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 30px;
+}
+
+.about .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    margin-bottom: -110px;
+}
+
+.about .box .stars{
+    position:relative;
+    bottom:  41%;
+    left: 19px;
+}
+
+@media (max-width: 767px) {
+    .about .box .stars{
+        position:absolute;
+        bottom:  40%;
+        left: 30px;
+    }
+}
+
+.about .box .stars h1{
+    color: #ffe600;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.about .box .stars h3{
+    font-style: oblique;
+    color: white;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    width: 70%;
+}
+
+.about .box .stars p{
+    color: white;
+}
+
+.about .box img{
+    height: 80%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    /* filter: blur(1px); */
+    filter: grayscale(50%);
+}
+
+.about .box img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+/* **************************End About*************************** */
+/* **************************End endmix*************************** */
+.endix .endend{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .endix .endend{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.endend  .box a{
+    display: flex;
+    padding-top: 15px;
+    font-size: 10px;
+}
+
+.endend  .boxer {
+    text-align: start;
+    width: 42%;
+}
+
+.endend  .boxer h1{
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .endend  .boxer h1{
+        font-size: 12px;
+        font-weight: 400;
+        padding-bottom: 16px;
+    }
+}
+
+.endend  .boxer p{
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .endend  .boxer p{
+        font-size: 7px;
+    }
+}
+
+.endend .boxer button{
+    background-color: #eeff00;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    cursor: pointer;
+    font-size: 1    0px;
+}
+
+@media (max-width: 767px) {
+    .endend .boxer button{
+        padding: 5px;
+        font-size: 7px;
+    }
+}
+
+.endend .boxer button:hover{
+    background-color: #c0ee19;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .endend .boxer button:hover{
+        padding: 5px;
+    }
+}
+/* **************************End endmix*************************** */

@@ -1,0 +1,174 @@
+.about1 .boxabout{
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .about1 .boxabout{
+        display: flex;
+        padding-bottom: 50px;
+        flex-direction: column-reverse;
+    }
+}
+
+.about1 .boxabout .box12{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .about1 .boxabout .box12{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.about1 .boxabout h1{
+    max-width: 80%;
+    font-size: 30px;
+    padding-bottom: 25px;
+    font-weight: 800;
+}
+
+@media (max-width: 767px) {
+    .about1 .boxabout h1{
+        max-width: 80%;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-weight: 800;
+    }
+}
+
+.about1 .boxabout p{
+    max-width: 80%;
+    font-size: 13px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .about1 .boxabout p{
+        max-width: 100%;
+        font-size: 12px;
+        padding-bottom: 25px;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 20px;
+    }
+}
+
+.about1 .boxabout button{
+    background-color: #eeff00;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    cursor: pointer;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.about1 .boxabout button:hover{
+    background-color: #c0ee19;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid ;
+    cursor: pointer;
+}
+
+.about1 .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.about1 img{
+    /* width: 100%;*/
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .about1 img{
+        height: 224px;
+        width: 89%;
+    }
+}
+
+
+.about1 .boxabout:nth-child(even){
+    border-top: 2px solid;
+    padding-top: 50px;
+}
+/* ***************************end about***************** */
+
+/* ***************************start team***************** */
+
+.about .team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+}
+
+.about .team .box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 22px;
+    flex-direction: column;
+}
+
+.about .team .box h3{
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgb(43, 27, 27);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about .team .box p{
+    margin-bottom: 15px;
+}
+
+.about .team .box i{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about .team .boxer .box .icon .bi-facebook:hover{
+    color: blue;
+}
+
+.about .team .boxer .box .icon .bi-instagram:hover{
+    color: rgb(255, 0, 0);
+}
+
+.about .team .boxer .box .icon .bi-twitter:hover{
+    color: blue;
+}
+
+.about .image{
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.about img{
+    height: 63%;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+/* ***************************start team***************** */
